@@ -7,16 +7,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700;900&family=DM+Serif+Display&display=swap" rel="stylesheet">
     <style>
         :root {
-            --purple: #667eea;
-            --purple-dark: #764ba2;
-            --purple-light: #a78bfa;
-            --bg: #f8f7ff;
-            --white: #ffffff;
-            --text: #1a1a2e;
-            --gray: #6b7280;
-            --green: #10b981;
-            --red: #ef4444;
-            --gold: #f59e0b;
+            --purple: #d6ad62;
+            --purple-dark: #8f6a32;
+            --purple-light: #f0d28c;
+            --bg: #0b0b0c;
+            --white: #151517;
+            --text: #f5efe3;
+            --gray: #aaa39a;
+            --green: #8bc7a2;
+            --red: #e88c82;
+            --gold: #d6ad62;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -34,9 +34,9 @@
             top: 0;
             width: 100%;
             z-index: 100;
-            background: rgba(255,255,255,0.95);
-            backdrop-filter: blur(12px);
-            box-shadow: 0 2px 20px rgba(102,126,234,0.1);
+            background: rgba(11,11,12,0.92);
+            backdrop-filter: blur(16px);
+            box-shadow: 0 2px 30px rgba(0,0,0,0.35);
             padding: 0 24px;
             height: 64px;
             display: flex;
@@ -45,6 +45,9 @@
         }
 
         .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
             font-size: 22px;
             font-weight: 700;
             background: linear-gradient(135deg, var(--purple), var(--purple-dark));
@@ -53,13 +56,14 @@
             background-clip: text;
             text-decoration: none;
         }
+        .nav-brand-logo { width: 38px; height: 38px; object-fit: contain; display: block; }
 
         .nav-back {
             display: flex;
             align-items: center;
             gap: 6px;
             text-decoration: none;
-            color: var(--purple);
+            color: var(--gold);
             font-weight: 500;
             font-size: 14px;
             padding: 8px 16px;
@@ -72,7 +76,7 @@
         /* HERO */
         .hero {
             margin-top: 64px;
-            background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%);
+            background: linear-gradient(135deg, #17130d 0%, #3a2a16 100%);
             padding: 80px 24px 100px;
             text-align: center;
             position: relative;
@@ -152,7 +156,7 @@
         /* CALCULATOR SECTION */
         .calc-section {
             padding: 60px 20px;
-            background: white;
+            background: var(--white);
         }
 
         .section-label {
@@ -160,7 +164,7 @@
             font-size: 13px;
             font-weight: 600;
             letter-spacing: 2px;
-            color: var(--purple);
+            color: var(--gold);
             text-transform: uppercase;
             margin-bottom: 12px;
         }
@@ -195,7 +199,7 @@
             background: var(--bg);
             border-radius: 20px;
             padding: 36px;
-            border: 2px solid rgba(102,126,234,0.1);
+            border: 1px solid rgba(214,173,98,0.22);
         }
 
         .calc-card h3 {
@@ -222,7 +226,7 @@
         .input-group label span {
             font-size: 20px;
             font-weight: 800;
-            color: var(--purple);
+            color: var(--gold);
         }
 
         input[type="range"] {
@@ -256,7 +260,7 @@
 
         /* RESULT CARD */
         .result-card {
-            background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%);
+            background: linear-gradient(135deg, #17130d 0%, #3a2a16 100%);
             border-radius: 20px;
             padding: 36px;
             color: white;
@@ -299,8 +303,8 @@
             width: 100%;
             margin-top: 24px;
             padding: 16px;
-            background: white;
-            color: var(--purple);
+            background: var(--white);
+            color: var(--gold);
             border: none;
             border-radius: 12px;
             font-size: 16px;
@@ -329,10 +333,10 @@
         }
 
         .plan-card {
-            background: white;
+            background: var(--white);
             border-radius: 20px;
             padding: 32px;
-            border: 2px solid rgba(102,126,234,0.1);
+            border: 1px solid rgba(214,173,98,0.22);
             transition: all 0.3s;
             position: relative;
             overflow: hidden;
@@ -341,11 +345,11 @@
         .plan-card:hover {
             transform: translateY(-6px);
             box-shadow: 0 20px 40px rgba(102,126,234,0.15);
-            border-color: var(--purple);
+            border-color: var(--gold);
         }
 
         .plan-card.featured {
-            border-color: var(--purple);
+            border-color: var(--gold);
             background: linear-gradient(135deg, #f5f3ff, white);
         }
 
@@ -439,7 +443,7 @@
         /* STEPS */
         .steps-section {
             padding: 60px 20px;
-            background: white;
+            background: var(--white);
         }
 
         .steps-grid {
@@ -490,7 +494,7 @@
         }
 
         .faq-item {
-            background: white;
+            background: var(--white);
             border-radius: 12px;
             margin-bottom: 12px;
             overflow: hidden;
@@ -508,11 +512,11 @@
             transition: color 0.3s;
         }
 
-        .faq-q:hover { color: var(--purple); }
+        .faq-q:hover { color: var(--gold); }
 
         .faq-icon {
             font-size: 20px;
-            color: var(--purple);
+            color: var(--gold);
             transition: transform 0.3s;
             font-weight: 400;
         }
@@ -557,8 +561,8 @@
         .cta-btn {
             display: inline-block;
             padding: 16px 48px;
-            background: white;
-            color: var(--purple);
+            background: var(--white);
+            color: var(--gold);
             border-radius: 12px;
             font-size: 17px;
             font-weight: 700;
@@ -604,7 +608,7 @@
         .modal-overlay.active { display: flex; }
 
         .modal {
-            background: white;
+            background: var(--white);
             border-radius: 20px;
             padding: 40px;
             max-width: 500px;
@@ -663,7 +667,7 @@
         }
 
         .modal-form input:focus, .modal-form select:focus {
-            border-color: var(--purple);
+            border-color: var(--gold);
         }
 
         .modal-form input[readonly] {
@@ -701,7 +705,7 @@
         }
 
         .upload-box:hover {
-            border-color: var(--purple);
+            border-color: var(--gold);
             background: #f0eefe;
         }
 
@@ -779,7 +783,7 @@
 
 <!-- NAVBAR -->
 <nav>
-    <a href="index.html" class="nav-logo">小莊國際</a>
+    <a href="index.html" class="nav-logo"><img class="nav-brand-logo" src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E5%B0%8F%E8%8E%8ALOGO-2kGoegpwhEQLjiO1Hab3clrr16QwLK.png" alt="小莊國際 Logo"><span>小莊國際</span></a>
     <a href="index.html" class="nav-back">← 返回首頁</a>
 </nav>
 
@@ -1021,7 +1025,7 @@
                     <span class="faq-icon">+</span>
                 </div>
                 <div class="faq-a">
-                    舊貸款結清後即可重新申請。若舊貸款尚未結清，依個別情況可能可以申請增貸，請聯繫我們的客服人員了解詳情。
+                    舊貸款結清後即可重新申請。若舊貸款尚未結清，依個別情況可能可以申請增貸，請聯繫我們的客  人員了解詳情。
                 </div>
             </div>
         </div>
